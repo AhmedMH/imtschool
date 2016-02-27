@@ -114,6 +114,19 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="intro">
+                        <script>
+  (function() {
+    var cx = '018149602028419300114:lebf_4kmvwu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
                         <p>IMT School (I Make Technology School) is not a place where you can take some courses; it is a place in which you practice technology. We believe that listening to someone speaking about something is not a good way of learning, so, “Do it yourself” is our way.</p>
                         <p>Our learning methodology totally depends on hands on labs that transfers the knowledge you get from being just information to be an experience.</p>
                         <p>Our staff are engineers from leading companies in the same field.</p>
