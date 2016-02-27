@@ -9,8 +9,8 @@
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IMTSchool | Training Center</title>
-    <meta name="description" content="IMTSchool is a training center">
-    <meta name="keywords" content="imtschool, IMTSchool, training center, embedded systems, web developmemt">
+    <meta name="description" content="IMT School (I Make Technology School) is a training center">
+    <meta name="keywords" content="imtschool, I make technology school, IMTSchool, training center, embedded systems, web developmemt">
     <meta name="author" content="IMTSchool">
     <meta property="og:image" content="img/01.jpg"/>
     <meta property="og:title" content="IMTSchool"/>
