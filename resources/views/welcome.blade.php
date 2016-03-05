@@ -51,7 +51,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="
+    overflow-x: hidden;
+">
     <!-- Navigation
     ==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
@@ -71,11 +73,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#tf-home" class="page-scroll">Home</a></li>
-            <li><a href="#tf-about" class="page-scroll">About</a></li>
+            <li><a href="#tf-about" id="about" class="page-scroll">About</a></li>
             <!-- <li><a href="#tf-team" class="page-scroll">Team</a></li> -->
-            <li><a href="#tf-courses" class="page-scroll">Courses</a></li>
+            <li><a href="#tf-courses" id="courses" class="page-scroll">Courses</a></li>
             <!-- <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li> -->
-            <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
+            <li><a href="#tf-contact" id="contact" class="page-scroll">Contact</a></li>
            <!--  <li><button type="button" class="btn btn-warning btn-lg btn-block">
               Register
             </button></li> -->
@@ -777,10 +779,11 @@ Hours
     new WOW().init();
     $("#fall").addClass("bounceInDown");
      // $('#fall').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){$("#fall").removeClass('bounceInDown'); $("#fall").addClass('bounce');} );
-  //    $(document).ready(function(){
-  //   setTimeout("$('#fall').addClass('visible animated bounceInDown');",1000);
-  //
-  // });
+     $(document).ready(function(){
+        $('#{!!session("scroll")!!}').trigger('click');
+    //setTimeout("$('#fall').addClass('visible animated bounceInDown');",1000);
+  
+  });
  //     $('<img/>').attr('src', 'img/01.jpg').load(function() {
  //  $(this).remove(); // prevent memory leaks as @benweet suggested
  //

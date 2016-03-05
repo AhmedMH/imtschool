@@ -103,3 +103,18 @@ $courses=[
 		];
      return view('welcome',['courses'=>$courses]);
 });
+
+Route::get('/about', function () {
+
+	return redirect('/')->with('scroll','about');
+});
+
+Route::get('/courses', function () {
+
+	return redirect('/')->with('scroll','courses');
+});
+
+Route::get('/contact', function () {
+
+	return redirect('/')->with('scroll','contact');
+});
