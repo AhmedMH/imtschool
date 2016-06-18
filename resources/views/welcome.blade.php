@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IMTSchool | Training Center</title>
+    <title>IMTSchool | The best training center in Egypt for Embedded Systems</title>
     <meta name="description" content="IMT School (I Make Technology School) is not a place where you can take some courses; it is a place in which you practice technology. We believe that listening to someone speaking about something is not a good way of learning, so, “Do it yourself” is our way. | IMTSchool is a training center | Embedded Systems Courses">
     <meta name="keywords" content="imtschool, I make technology school, IMTSchool, training center, embedded systems, web developmemt">
     <meta name="author" content="IMTSchool">
