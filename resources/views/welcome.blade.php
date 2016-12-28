@@ -224,10 +224,72 @@
                  <div class="container">
     <div class="row">
 
-
-        <div class="col-md-6 text-center "> 
+        <div class="col-md-10 text-center col col-md-offset-1"> 
+            <div class="panel panel-primary wow animated fadeInUp" style="border-color: #DD0000;">
+            
+                <div class="panel-heading" style="background-color: #BB0000; border-color: #DD0000;">
+                    <h1 class="panel-title" style="text-transform:capitalize; font-weight:bold;">
+                        Standard Embedded Systems Diploma
+                    </h1>
+                    <span class="pull-right btn-click panel-collapsed">
+                        <i class="fa fa-chevron-circle-down"></i>
+                    </span> 
+                </div>
+                
+            <div class="clearfix"></div>
+            
+            <div class="panel-body" style="display:none; border-color: #DD0000;">
+            <div class="row">
+                <div class="col-md-6 text-center col">
+                    <img src="{{asset('img/kit.jpg')}}" style="max-width: 100%;" /> 
+                    <h3 style="font-size: 30px;">
+                        <span class="label label-info">Development KIT</span>
+                    </h3>
+                    <!-- <h3>Development KIT Includes:</h3> -->
+                    <ul style="margin-left: 35px; text-align: left;">
+                        <li>AVR Atmega32 Microcontroller and AVR Programmer.</li>
+                        <li>Motors (DC, Servo and stepper motor).</li>
+                        <li>Character LCD and Seven Segment Displays.</li>
+                        <li>Sensors (Temperature and Light).</li>
+                        <li>Basic elements (Relay, Buzzer, Tactile switches, LEDs, Transistors, Darlington pair, Optocouplers, Op Amp, Etc).</li>
+                        <li>EEPROM </li>
+                        <li>Other elements (USB to TTL converter, Keypad ...).</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col" style="text-align: left;">
+                    <h3>Standard Embedded Systems Diploma Details:</h3>
+                    <ul style="margin-left: 35px;">
+                        <li>The diploma is supervised by Eng. Ahmed Ashmawy (Embedded Systems department manager in ITI).</li>
+                        <li><span class="text_exposed_show">80% of the diploma is about making your own embedded system (Set your HW environment and start developing your projects) and the rest 20% is embedded systems concepts that you must know.</span></li>
+                    </ul>
+                    <h3><span class="text_exposed_show">Course Price:</span></h3>
+                    <ul style="margin-left: 35px;">
+                        <li>2800 L.E. (Development KIT Included).</li>
+                    </ul>
+                    <h3>Course Duration:</h3>
+                    <ul style="margin-left: 35px;">
+                        <li>Total of 160 hours.</li>
+                        <li>2 days/week with total of 8 hours: 4 hours each day --&gt; Friday &amp; Saturday.</li>
+                    </ul>
+                    <h3>Course Outline:</h3>
+                    <ul style="margin-left: 35px;">
+                        <li>C Programming and Data Structures Algorithms.</li>
+                        <li>Embedded Systems Concepts.</li>
+                        <li>Embedded C for Micro-controllers.</li>
+                        <li>Embedded Systems Software Design Using UML.</li>
+                        <li>HW/SW Co-Design.</li>
+                        <li>Real Time Operating Systems and Scheduling.</li>
+                        <li>Software Engineering for Embedded Systems.</li>
+                        <li>Verification and Testing of Embedded Systems.</li>
+                        <li>Embedded System Development Tools.</li>
+                        <li>Graduation project.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                
+    </div>
 @foreach ($courses as  $ind=>$course)
-<?php if(in_array($ind,[1,2,3,4])) continue;?>
         
             <div class="panel panel-primary wow animated fadeInUp">
             
@@ -235,14 +297,14 @@
                     <h1 class="panel-title" style="text-transform:capitalize; font-weight:bold;">
                         {{$course['title']}}
                     </h1>
-                    <!-- <span class="pull-right btn-click panel-collapsed">
+                    <span class="pull-right btn-click panel-collapsed">
                         <i class="fa fa-chevron-circle-down"></i>
-                    </span>  -->
+                    </span> 
                 </div>
                 
             <div class="clearfix"></div>
             
-            <div class="panel-body" style="display:block;">
+            <div class="panel-body" style="display:none;">
 
 
             <table class="table table-condensed" align="left">
@@ -307,97 +369,6 @@ Hours
 @endforeach
 </div>
         
-
-
-
-
-
-
-
-        <div class="col-md-6 text-center"> 
-@foreach ($courses as  $ind=>$course)
-<?php if(in_array($ind,[0,5]))  continue;?>
-        
-            <div class="panel panel-primary wow animated fadeInUp">
-            
-                <div class="panel-heading">
-                    <h1 class="panel-title" style="text-transform:capitalize; font-weight:bold;">
-                        {{$course['title']}}
-                    </h1>
-<!--                     <span class="pull-right btn-click panel-collapsed">
-                        <i class="fa fa-chevron-circle-down"></i>
-                    </span>  -->
-                </div>
-                
-            <div class="clearfix"></div>
-            
-            <div class="panel-body" style="display:block;">
-
-
-            <table class="table table-condensed" align="left">
-
-  <thead>
-<tr>
-<th >
-Lectures
-</th>
-<th >
-Outline
-</th>
-<th >
-Hours
-</th>
-</tr>
-</thead>
-
-<tbody align="left">
-
-@foreach ($course['content'] as  $index => $content)
-<tr>
-    <td>Lecture {{ $index+1 }}</td>
-    <td>
-    <?php
-    $data = explode(';', $content[0]);
-    foreach ($data as $key => $value) {
-        # code...
-    switch ($value[0]) {
-        case '1':
-           echo "<span class='fa fa-circle' style='font-size:7px; margin-left:0px; margin-right:7px; vertical-align: middle;'> </span>".substr($value, 1).'.';
-            break;
-             case '2':
-           echo "<span class='fa fa-dot-circle-o' style='font-size:9px; margin-left:10px; margin-right:7px; vertical-align: middle;'> </span> ".substr($value, 1).'.';
-            break;
-             case '3':
-           echo "<span class='fa fa-circle-o' style='font-size:9px; margin-left:20px; margin-right:7px; vertical-align: middle;'> </span> ".substr($value, 1).'.';
-            break;
-             case '4':
-           echo "<span class='fa fa-square-o' style='font-size:9px; margin-left:30px; margin-right:7px; vertical-align: middle;'> </span> ".substr($value, 1).'.';
-            break;
-        
-        default:
-            echo substr($value, 1);
-            break;
-    }
-    echo '<br>';
-    }
-    ?>
-    
-
-    </td>
-    <td>{{$content[1]}}</td>
-</tr>
-@endforeach
-</tbody>
-</table>
-                                                                
-        </div>
-                
-    </div>
-@endforeach
-</div>
-        </div>
-
-
 
 
 </div>
@@ -691,14 +662,14 @@ Hours
                     </div>
                     </div>
                      <div class="row">
-                        <div>3 Ibrahim El-Refaey St, from Elserag Mall<br>
-                        Al Manteqah Ath Thamenah, Nasr City, Cairo Governorate<br>
-                        +(20) 100 297 3135<br>
+                        <div>8 Ahmed Amin, Ad Doqi<br>
+                        Giza Governorate Giza, Egypt<br>
+                        +(20) 101 998 6337<br>
                         <a href="mailto:info@imtschool.com" >info@imtschool.com</a><br>
                         </div>
                         <hr>
         <div class="col-md-12 wow animated zoomIn">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4678925817393!2d31.346368742646007!3d30.05211999170911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e7bd933013d%3A0x5eefde08f79ec7cc!2sIMTSchool!5e0!3m2!1sen!2seg!4v1456537350515" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.4713958349237!2d31.21712502919062!3d30.04014019886778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840d570437bdf%3A0x568c612b77511448!2s2+Ahmed+Amin%2C+Ad+Doqi+A%2C+Ad+Doqi%2C+Giza+Governorate%2C+Egypt!5e0!3m2!1sen!2s!4v1482787234281" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
                 <div class="col-md-5">
 
@@ -791,16 +762,29 @@ Hours
 
 $(document).on('click', '.btn-click', function(e){
 
-    /*var $this = $(this);
+    var $this = $(this);
     if(!$this.hasClass('panel-collapsed')) {
         $this.parents('.panel').find('.panel-body').slideUp();
         $this.addClass('panel-collapsed');
+        $this.removeClass('panel-extended');
         $this.find('i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
     } else {
-        $this.parents('.panel').find('.panel-body').slideDown();
+            // $('html, body').animate({
+            // scrollTop:  $this.parents('.panel').offset().top - $('#tf-menu').outerHeight()});
+            // $('#tf-courses').find('.panel-extended').parents('.panel').find('.panel-body').hide(0, function() { 
+            //     $('html, body').scrollTop($this.parents('.panel').offset().top - $('#tf-menu').outerHeight());
+            // });
+
+        $this.parents('.panel').find('.panel-body').slideDown(1000);
+        $('#tf-courses').find('.panel-extended').parents('.panel').find('.panel-body').hide(0);
+        $('html, body').scrollTop($this.parents('.panel').offset().top - $('#tf-menu').outerHeight() - 10);
+        $('#tf-courses').find('.panel .panel-heading .btn-click').addClass('panel-collapsed');
+        $('#tf-courses').find('.panel .panel-heading .btn-click').removeClass('panel-extended');
         $this.removeClass('panel-collapsed');
+        $this.addClass('panel-extended');
+        $('#tf-courses').find('.panel .panel-heading .btn-click').find('i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
         $this.find('i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
-    }*/
+    }
 })
     </script>
 
