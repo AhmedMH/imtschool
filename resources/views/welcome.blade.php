@@ -78,9 +78,15 @@
             <li><a href="#tf-courses" id="courses" class="page-scroll">Courses</a></li>
             <!-- <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li> -->
             <li><a href="#tf-contact" id="contact" class="page-scroll">Contact</a></li>
-           <!--  <li><button type="button" class="btn btn-warning btn-lg btn-block">
+            <!-- <li><button type="button" class="btn btn-warning btn-lg btn-block">
               Register
             </button></li> -->
+            <li>
+                <a href="https://www.facebook.com/imaketechnologyschool/" target="imt_link" style="background: #3b5998; padding:10px; margin-top: 4px; color: #FFF !important;" class="btn btn-primary btn-xs btn-block">
+                    <i class="fa fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -722,7 +728,7 @@ Hours
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/imaketechnologyschool" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="imt_link" href="https://www.facebook.com/imaketechnologyschool" target="_blank"><i class="fa fa-facebook"></i></a></li>
                    <!--  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
                 </ul>
